@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-4">Our Products</h1>
+    <p class="lead text-center">At Denton's Pet Shop, we offer a wide selection of products to keep your pets happy and healthy. From premium pet food to fun toys, grooming supplies, and everything in between, we’ve got you covered!</p>
+
+    <!-- Pet Food Section -->
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+            <h2>Pet Food & Treats</h2>
+            <p>We carry a variety of high-quality pet food brands, including options for dogs, cats, birds, and more. Whether you're looking for grain-free options, organic foods, or specialized diets, we have what your pet needs to stay healthy and strong.</p>
+            <ul>
+                <li>Dry Food</li>
+                <li>Wet Food</li>
+                <li>Raw & Freeze-Dried Food</li>
+                <li>Organic & Grain-Free Options</li>
+                <li>Treats & Chews</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='/images/food.jpg') }}" alt="Pet Food" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!-- Toys Section -->
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6 order-md-2">
+            <h2>Toys & Accessories</h2>
+            <p>Keep your pets entertained with our wide selection of toys and accessories. We offer durable and engaging toys that are perfect for keeping your pets active and happy, as well as stylish accessories for everyday comfort.</p>
+            <ul>
+                <li>Interactive Toys</li>
+                <li>Chew Toys</li>
+                <li>Collars & Leashes</li>
+                <li>Pet Beds & Crates</li>
+                <li>Apparel & Accessories</li>
+            </ul>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <img src="{{ url_for('static', filename='images/toys.jpg') }}" alt="Pet Toys" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!-- Grooming Section -->
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+            <h2>Grooming Supplies</h2>
+            <p>We offer a wide range of grooming supplies to keep your pet looking their best. From shampoos and brushes to nail clippers and grooming kits, we have everything you need for your at-home pet grooming sessions.</p>
+            <ul>
+                <li>Shampoos & Conditioners</li>
+                <li>Brushes & Combs</li>
+                <li>Nail Clippers & Grinders</li>
+                <li>Grooming Kits</li>
+                <li>Flea & Tick Treatments</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/supplies.jpg') }}" alt="Grooming Supplies" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!-- Health & Wellness Section -->
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6 order-md-2">
+            <h2>Health & Wellness</h2>
+            <p>Keep your pets in tip-top shape with our range of health and wellness products. From vitamins and supplements to flea treatments and dental care, we have what your pets need to stay healthy all year round.</p>
+            <ul>
+                <li>Vitamins & Supplements</li>
+                <li>Flea & Tick Control</li>
+                <li>Dental Care</li>
+                <li>First Aid Kits</li>
+                <li>Medicated Treatments</li>
+            </ul>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <img src="{{ url_for('static', filename='images/health.jpg') }}" alt="Health and Wellness" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+{% endblock %}
